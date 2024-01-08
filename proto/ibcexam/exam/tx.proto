@@ -1,0 +1,7 @@
+syntax = "proto3";
+package ibcexam.exam;
+
+option go_package = "ibcExam/x/exam/types";
+
+// Msg defines the Msg service.
+service Msg {}

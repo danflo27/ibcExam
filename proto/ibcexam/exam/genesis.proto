@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package ibcexam.exam;
+
+import "gogoproto/gogo.proto";
+import "ibcexam/exam/params.proto";
+
+option go_package = "ibcExam/x/exam/types";
+
+// GenesisState defines the exam module's genesis state.
+message GenesisState {
+  Params params  = 1 [(gogoproto.nullable) = false];
+  string port_id = 2;
+}
+

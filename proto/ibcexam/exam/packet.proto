@@ -1,0 +1,13 @@
+syntax = "proto3";
+package ibcexam.exam;
+
+option go_package = "ibcExam/x/exam/types";
+
+message ExamPacketData {
+    oneof packet {
+        NoData noData = 1;
+    }
+}
+
+message NoData {
+}
